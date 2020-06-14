@@ -1,6 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Admin from "./pages/Admin";
 
 const App = () => {
@@ -19,26 +21,6 @@ const App = () => {
       </Switch>
     </Router>
   );
-};
-
-const Home = () => {
-  return (
-    <>
-    <h2>Home</h2>
-    <ul>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/admin">ReactAdmin</Link>
-      </li>
-    </ul>
-    </>
-  );
-};
-
-const About = () => {
-  return <h2>About</h2>;
 };
 
 export default App;
