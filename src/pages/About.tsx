@@ -2,12 +2,14 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   const history = useHistory();
 
   return (
     <>
+      <Navbar />
       <Container maxWidth="md">
         <h2>About</h2>
         <p>
