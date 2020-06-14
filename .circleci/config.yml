@@ -10,14 +10,14 @@ jobs:
       - node/with-cache:
           steps:
             - run:
-              name: Install node_modules
-              command: yarn
+                name: Install node_modules
+                command: yarn
             - run:
-              name: Build
-              command: yarn build
+                name: Build
+                command: yarn build
             - run:
-              name: Dploy to Firebase
-              command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
+                name: Dploy to Firebase
+                command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
 
 workflows:
   build-and-deploy:
