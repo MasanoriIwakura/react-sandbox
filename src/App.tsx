@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import ReactAdmin from "./pages/ReactAdmin";
+import Admin from "./pages/Admin";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
           <About />
         </Route>
         <Route path="/admin">
-          <ReactAdmin />
+          <Admin />
         </Route>
       </Switch>
     </Router>

@@ -12,7 +12,7 @@ import {
   ReferenceField,
   EditButton,
 } from "react-admin";
-import { Post } from "../interfaces/post";
+import { Post } from "../../interfaces/admin/post";
 
 type PostListProps = {
   posts: Post[];

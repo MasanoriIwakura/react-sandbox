@@ -1,6 +1,6 @@
 import * as React from "react";
 import { List, Datagrid, TextField, EmailField } from "react-admin";
-import { User } from "../interfaces/user";
+import { User } from "../../interfaces/admin/user";
 import MyUrlField from "./MyUrlField";
 
 type Props = {
