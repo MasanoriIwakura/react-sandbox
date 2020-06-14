@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+import MyCard from "../components/MyCard";
+import Logo from "../logo.svg";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -53,10 +54,11 @@ const Home = () => {
               {links.map((link, index) => (
                 <Grid key={index} item>
                   <Link to={link.path}>
-                    <Paper className={classes.paper}>
-                      {link.label}
-                      <p>{link.overview}</p>
-                    </Paper>
+                    <MyCard
+                      image={Logo}
+                      title={link.label}
+                      overview={link.overview}
+                    />
                   </Link>
                 </Grid>
               ))}
