@@ -11,15 +11,25 @@ import {
   TextField,
   ReferenceField,
   EditButton,
+  Filter,
 } from "react-admin";
 import { Post } from "../../interfaces/admin/post";
+
+const PostFilter = (props?: any) => (
+  <Filter {...props}>
+    <TextInput label="Search" source="q" alwaysOn />
+    <ReferenceInput label="User" source="userId" reference="users" allowEmpty>
+      <SelectInput optionText="name" />
+    </ReferenceInput>
+  </Filter>
+);
 
 type PostListProps = {
   posts: Post[];
 };
 
 export const PostList: React.FC<PostListProps> = (props) => (
-  <List {...props}>
+  <List filters={<PostFilter />} {...props}>
     <Datagrid>
       <TextField source="id" />
       {/* ReferenceFieldでリレーション張れる */}
