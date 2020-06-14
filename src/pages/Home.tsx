@@ -5,6 +5,10 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import MyCard from "../components/MyCard";
 import Logo from "../logo.svg";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -39,11 +43,28 @@ const links: ILink[] = [
   },
 ];
 
+const linkStyle = {
+  color: "white",
+  marginLeft: "1rem"
+};
+
 const Home = () => {
   const classes = useStyles();
 
   return (
     <>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">Home</Typography>
+          <a
+            href="https://github.com/MasanoriIwakura/react-sandbox"
+            target="blank"
+            style={linkStyle}
+          >
+            <GitHubIcon />
+          </a>
+        </Toolbar>
+      </AppBar>
       <Container maxWidth="md">
         <Grid container className={classes.root} spacing={2}>
           <Grid item xs={12}>
