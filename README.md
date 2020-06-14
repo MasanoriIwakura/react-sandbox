@@ -2,6 +2,8 @@
 
 React勉強用リポジトリ
 
+[![CircleCI](https://circleci.com/gh/MasanoriIwakura/react-sandbox.svg?style=svg)](https://circleci.com/gh/MasanoriIwakura/react-sandbox)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
