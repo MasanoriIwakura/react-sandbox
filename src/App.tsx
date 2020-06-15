@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Admin from "./pages/Admin";
+import GridLayout from "./pages/GridLayout";
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
         </Route>
         <Route path="/admin">
           <Admin />
+        </Route>
+        <Route path="/grid">
+          <GridLayout />
         </Route>
       </Switch>
     </Router>

@@ -38,6 +38,11 @@ const links: ILink[] = [
     label: "React Admin",
     overview: "React Adminのサンプル",
   },
+  {
+    path:"/grid",
+    label: "ReactGridLayout",
+    overview: "React Grid Layoutのサンプル"
+  }
 ];
 
 const Home = () => {
