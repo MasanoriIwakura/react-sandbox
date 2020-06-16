@@ -16,7 +16,7 @@ jobs:
                 name: Build
                 command: yarn build
             - run:
-                name: Dploy to Firebase
+                name: Deploy to Firebase
                 command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
 
 workflows:
